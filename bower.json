@@ -1,0 +1,26 @@
+{
+  "name": "roudash",
+  "homepage": "https://github.com/renanalfarth/roudash",
+  "authors": [
+    "Renan Alfarth<renan.fire12@gmail.com>"
+  ],
+  "description": "dashboard for my routine",
+  "main": "index.html",
+  "keywords": [
+    "dashboard",
+    "routine"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.4.2",
+    "semantic": "semantic-ui#^2.2.11"
+  }
+}
