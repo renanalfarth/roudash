@@ -1,6 +1,6 @@
 // COMPONENTS
 const Home      = { template: '<div>Home</div>' };
-const Promocoes = { template: '<div>Promoções</div>' };
+const Promocoes = { template: '<div>Promoções </div>' };
 const Cotacoes  = { template: '<div>Cotações</div>' };
 const Tempo     = { template: '<div>Tempo</div>' };
 
@@ -17,4 +17,4 @@ const router = new VueRouter({
   routes // short for `routes: routes`
 });
 
-var app = new Vue({router}).$mount('#app');
+var app = new Vue({router, data: {teste:1}}).$mount('#app');
