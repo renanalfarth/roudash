@@ -1,19 +1,16 @@
 angular.module('dashboard', [])
-  .controller('DashboardController', function($http) {
+  .controller('DashboardController', function($scope, $http) {
 
     console.log('teste');
 
     var req = {
      method: 'GET',
-     url: 'https://deals-crawler.herokuapp.com/hardmob',
-     headers: {
-       'Content-Type': 'application/json'
-     }
+     url: 'http://deals-crawler.herokuapp.com/hardmob'
     }
 
     $http(req)
     .then(function(response){
-      console.log(response);
+      $scope.hardmob = response.data.itens;
     });
 
 
