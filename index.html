@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dashboard">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roudash</title>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/DashboardController.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
   </head>
-  <body>
+  <body ng-controller="DashboardController">
 
-    <nav class="navbar ">
+    <nav class="navbar">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
         Roudash
@@ -68,12 +72,27 @@
   <section class="section">
 
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+
+      <div class="columns is-mobile">
+
+        <div class="column">
+          <h4 class="subtitle">Deals</h4>
+        </div>
+
+        <div class="column">
+          Second column
+        </div>
+
+        <div class="column">
+          Third column
+        </div>
+
+        <div class="column">
+          Fourth column
+        </div>
+
+      </div>
+
     </div>
   </section>
 
