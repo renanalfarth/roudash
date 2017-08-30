@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>ROUDASH</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roudash</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  </head>
+  <body>
 
-<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+    <nav class="navbar ">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        Roudash
+      </a>
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+      <a class="navbar-item is-hidden-desktop" href="https://github.com/renanalfarth" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-github"></i>
+        </span>
+      </a>
 
-<script src="bower_components/semantic/dist/semantic.min.js"></script>
+      <a class="navbar-item is-hidden-desktop" href="https://twitter.com/renanalfarth" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-twitter"></i>
+        </span>
+      </a>
 
-<style type="text/css">
-  body {
-    background-color: #FFFFFF;
-    }
-    .ui.menu .item img.logo {
-    margin-right: 1.5em;
-    }
-    .main.container {
-    margin-top: 7em;
-    }
-    .wireframe {
-    margin-top: 2em;
-    }
-    .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
-  }
-</style>
+      <a class="navbar-item is-hidden-desktop" href="https://facebook.com/renanalfarth" target="_blank">
+        <span class="icon" style="color: #3b5998;">
+          <i class="fa fa-facebook"></i>
+        </span>
+      </a>
 
-</head>
-
-<body>
-
-  <div id="app">
-
-    <div class="ui fixed inverted menu">
-      <div class="ui container">
-        <router-link to="/" class="header item">RODASH</router-link>
-        <router-link to="/promocoes" class="item">Promoções</router-link>
-        <router-link to="/cotacoes" class="item">Cotações</router-link>
-        <router-link to="/tempo" class="item">Tempo</router-link>
+      <div class="navbar-burger burger" data-target="navMenubd-example">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
 
-    <div class="ui main text container">
+    <div id="navMenubd-example" class="navbar-menu">
+      <div class="navbar-start">
+      </div>
 
-      <router-view></router-view>
+      <div class="navbar-end">
+        <a class="navbar-item is-hidden-desktop-only" href="https://github.com/renanalfarth" target="_blank">
+          <span class="icon" style="color: #333;">
+            <i class="fa fa-github"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/renanalfarth" target="_blank">
+          <span class="icon" style="color: #55acee;">
+            <i class="fa fa-twitter"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-desktop-only" href="https://facebook.com/renanalfarth" target="_blank">
+          <span class="icon" style="color: #3b5998;">
+            <i class="fa fa-facebook"></i>
+          </span>
+        </a>
+      </div>
 
     </div>
+  </nav>
 
-  </div>
+  <section class="section">
 
-</body>
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Roudash</strong> by <a href="http://www.renanalfarth.com.br">Renan Alfarth</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/renanalfarth/roudash">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  </body>
 </html>
-
-<script src="bower_components/vue/dist/vue.min.js"></script>
-<script src="bower_components/vue-router/dist/vue-router.min.js"></script>
-<script src="js/index.js"></script>
