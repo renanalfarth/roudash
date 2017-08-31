@@ -13,5 +13,4 @@ angular.module('dashboard', [])
       $scope.hardmob = response.data[0].itens;
     });
 
-
   });
