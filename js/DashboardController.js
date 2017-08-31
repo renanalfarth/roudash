@@ -10,7 +10,7 @@ angular.module('dashboard', [])
 
     $http(req)
     .then(function(response){
-      $scope.hardmob = response.data.itens;
+      $scope.hardmob = response.data[0].itens;
     });
 
 

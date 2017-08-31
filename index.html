@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html ng-app="dashboard">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roudash</title>
 
     <script src="js/angular.min.js"></script>
     <script src="js/DashboardController.js"></script>
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/ps-scroll.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body ng-controller="DashboardController">
@@ -77,19 +83,6 @@
       <div class="columns is-mobile">
 
         <div class="column">
-
-          <nav class="panel">
-            <p class="panel-heading">
-              deals
-            </p>
-            <a class="panel-block" ng-repeat="deal in hardmob.itens" href="{{ deal.link }}">
-              {{ deal.titulo }}
-            </a>
-          </nav>
-
-        </div>
-
-        <div class="column">
           Second column
         </div>
 
@@ -99,6 +92,21 @@
 
         <div class="column">
           Fourth column
+        </div>
+
+        <div class="column">
+
+          <article class="message is-turquoise">
+            <div class="message-header">
+              <p>Hardmob Deals</p>
+            </div>
+            <div class="message-body message-body-deals is-black is-scroll-apply">
+              <a class="panel-block deal-item" ng-repeat="deal in hardmob" href="{{ deal.link }}" target="_blank">
+                {{ deal.titulo }}
+              </a>
+            </div>
+          </article>
+
         </div>
 
       </div>
