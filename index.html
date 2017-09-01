@@ -91,7 +91,39 @@
         </div>
 
         <div class="column">
-          Fourth column
+
+          <article class="message is-blue">
+            <div class="message-header">
+              <p>Weather</p>
+            </div>
+            <div class="message-body message-body-weather is-black is-scroll-apply">
+              <a class="panel-block weather-item" ng-repeat="weather in weathers">
+
+                <table class="table-weather">
+                  <tr>
+                    <td>
+                      {{ weather.date }}
+                      <br />
+                      <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" />
+                      <br />
+                      {{ weather.description }}
+                    </td>
+                    <td>
+                      <span class="tag is-success">
+                        {{ weather.min }} ºc
+                      </span>
+                      <span class="tag is-danger">
+                        {{ weather.max }} ºc
+                      </span>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </a>
+            </div>
+          </article>
+
         </div>
 
         <div class="column">
@@ -100,7 +132,7 @@
             <div class="message-header">
               <p>Hardmob Deals</p>
             </div>
-            <div class="message-body message-body-deals is-black is-scroll-apply">
+            <div class="message-body message-body-deals is-black is-scroll-apply2">
               <a class="panel-block deal-item" ng-repeat="deal in hardmob" href="{{ deal.link }}" target="_blank">
                 {{ deal.titulo }}
               </a>

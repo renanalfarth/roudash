@@ -1,5 +1,10 @@
 .message-body-deals {
-  height: 307px;
+  height: 339px;
+  overflow: auto;
+}
+
+.message-body-weather {
+  height: 339px;
   overflow: auto;
 }
 
@@ -20,6 +25,15 @@
   border-bottom: 0px;
 }
 
+.weather-item {
+  font-size: 13px;
+  text-decoration: none!important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ddd!important;
+}
+
 .message.is-turquoise .message-header {
   background-color: #1abc9c;
   color: #fff;
@@ -30,11 +44,29 @@
   color: #090909;
 }
 
+.message.is-blue .message-header {
+  background-color: #34495e;
+  color: #fff;
+}
+
+.message.is-blue .message-body {
+  border-color: #34495e;
+  color: #090909;
+}
+
 .message-body-deals {
   padding: 0px;
   background: #55595c !important;
   color: #F5F5F5;
   position: relative;
+}
+
+.message-body-weather {
+  padding: 0px;
+  background: #55595c !important;
+  color: #F5F5F5;
+  position: relative;
+  color: #F5F5F5!important;
 }
 
 .message-body-deals a{
@@ -46,6 +78,24 @@
   background: #313131;
 }
 
+.message-body-weather a{
+  color: #F5F5F5!important;
+}
+
+.message-body-weather a:hover {
+  color: #F5F5F5!important;
+  background: #313131;
+}
+
 .panel-block:first-child, .panel-heading:first-child, .panel-tabs:first-child {
   border: 0px;
+}
+
+.table-weather {
+  width: 100%;
+}
+
+.table-weather td {
+  vertical-align: middle;
+  padding: 3px;
 }
