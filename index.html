@@ -102,7 +102,7 @@
                 <table class="table-weather">
                   <tr>
                     <td>
-                      {{ weather.date }}
+                      {{ weather.date | date : format : 'GMT-3' }}
                       <br />
                       <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" />
                       <br />
